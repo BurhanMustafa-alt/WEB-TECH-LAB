@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Pseudo class</title>
+</head>
+<style>
+    a:link{
+        color: red;
+    }
+    a:hover{
+        color: hotpink;
+        text-decoration: none;
+        font-size: 40px;
+    }
+    a:visited{
+        color: green;
+    }
+    a:active{
+        color: rgb(12, 215, 137);
+    }
+    div{
+        background-color: green;
+        color: white;
+        padding: 25px;
+        text-align: center;
+    }
+    div:hover{
+        background-color: rgb(12, 151, 151);
+    }
+    input:focus{
+        background-color: blue;
+        color: white;
+    }
+    a.highlight:hover{
+        color: rgb(145, 33, 33);
+        font-size: 30px;
+    }
+    div.tip p{
+        display: none;
+        background-color: yellow;
+        padding: 30px;
+    }
+    div.tip:hover p{
+        display: block;
+        color: black;
+    }
+    form{
+        margin-top: 20px;
+    }
+    input{
+        padding: 10px;
+        margin: 5px;
+    }
+    button{
+        padding: 10px 20px;
+        cursor: pointer;
+    }
+</style>
+<body>
+    <h2>Styling a link</h2>
+
+    <p>
+        <b><a href="#Link" target="_blank">This is a link</a></b>
+    </p>
+
+    <div>
+        <form>
+            <label>First Name:</label><br>
+            <input type="text" name="firstname" placeholder="Enter first name"><br>
+
+            <label>Last Name:</label><br>
+            <input type="text" name="lastname" placeholder="Enter last name"><br>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+</body>
+</html>
