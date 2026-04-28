@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Structural Pseudo Class</title>
+
+    <style>
+        p:first-child {
+            color: blue;
+            font-weight: bold;
+            background-color: green;
+        }
+
+        p em:first-child {
+            color: red;
+            font-weight: bold;
+        }
+
+        p:first-child em {
+            color: greenyellow;
+            font-weight: bold;
+        }
+
+        q:lang(yes) {
+            quotes: '<' '>';
+        }
+
+        div p:last-child {
+            color: darkorange;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Structural Pseudo Class</h2>
+
+    <div>
+        <p>I am the first <em>P</em><em>P</em><em>P</em> child</p>
+        <p>I am the 2nd P child</p>
+        <p>I am the first <em>EM</em> word in the text and I am the 2nd <em>EM</em> word</p>
+    </div>
+
+    <div>
+        <p>I am also the first P child <em>emphasized</em></p>
+        <p>I am the 2nd P child</p>
+        <p>I am also the first <em>EM</em> word in the text and I am the 2nd <em>EM</em> word</p>
+    </div>
+
+    <p>Here is the use of lang: <q lang="yes">I am selected by lang pseudo class</q></p>
+
+</body>
+</html>
