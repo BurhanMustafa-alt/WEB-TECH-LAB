@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Elements</title>
+
+    <style>
+        p::first-line {
+            color: red;
+        }
+
+        .p2::first-letter {
+            color: blue;
+            font-size: 30px;
+        }
+
+        p::first-letter {
+            font-size: 30px;
+        }
+
+        h2::before {
+            content: url(icon.ico);
+        }
+
+        ::marker {
+            color: blue;
+            font-size: 10px;
+        }
+
+        ::selection {
+            background-color: yellow;
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Use of pseudo elements</h2>
+
+    <p>
+        This is a paragraph to demonstrate the first line pseudo element.
+    </p>
+
+    <p class="p2">
+        This paragraph shows the first letter styling.
+    </p>
+
+    <ul>
+        <li>Item one</li>
+        <li>Item two</li>
+        <li>Item three</li>
+    </ul>
+
+</body>
+</html>
