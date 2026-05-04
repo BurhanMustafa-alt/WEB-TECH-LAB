@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    div.first {
+      width: 200px;
+      height: 100px;
+      border: 1px solid;
+      background-image: linear-gradient(
+        to right,
+        red 30%,
+        yellow 10%,
+        green 60%
+      );
+    }
+    div.second {
+      width: 1000px;
+      height: 500px;
+      border: 1px solid;
+      background-image: repeating-radial-gradient(
+        circle,
+       red,
+        bisque 10%
+      );
+    }
+     div.third {
+      width: 1000px;
+      height: 500px;
+      border: 1px solid;
+      background-image: radial-gradient(
+        circle,
+       red,
+          yellow,
+        green,
+        blue,
+        purple, 
+         aliceblue,
+        aqua, 
+        bisque
+      );
+    }
+  </style>
+  <body>
+    <div class="first"></div>
+    <div class="second"></div>
+    <div class="third"></div>
+  </body>
+</html>

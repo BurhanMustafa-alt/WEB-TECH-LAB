@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    p.t1{
+        width: 200px;
+        border: 1px solid red;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: clip;
+        background-color: aqua;
+        box-shadow: 10px 10px 5px black;
+        word-wrap: break-word;
+    }
+    h2{
+        text-shadow: 5px 5px 5px red;
+    }
+    p.t2{
+         width: 200px;
+        border: 1px solid red;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        background-color: linen;
+    
+    }
+    p.t3{
+        width: 200px;
+        border: 1px solid black;
+        word-wrap: break-word;
+    }
+    p.t4{
+        width: 100px;
+        border: 1px solid green;
+        word-break: break-all;
+    }
+    p:hover{
+        overflow: visible;
+    }
+    span{
+        writing-mode: vertical-rl;
+        border: 1px solid;
+    }
+    p.t5{
+        writing-mode: vertical-lr;
+        border: 1px solid;
+    }
+  </style>
+  <body>
+    <h2>Learning About Text Properties</h2>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero vel
+      consequatur molestias voluptatibus? Deleniti, harum blanditiis. Aut autem
+      provident commodi ratione ut a. Maxime, quae ipsa voluptate nam
+      praesentium incidunt dicta explicabo neque. Officia delectus nam, aliquam
+      consequuntur dicta exercitationem quae. Fugiat fuga ipsa aperiam fugit
+      optio deleniti hic autem vitae incidunt facere rem, mollitia ex quo eum
+      perferendis nam, blanditiis quidem repellendus dolore vel reiciendis
+      consequuntur. Excepturi, dignissimos asperiores?
+    </p>
+    <p class="t1">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem odit dolore
+      repellat omnis nam nobis commodi laudantium veniam saepe minus.
+    </p>
+    <p class="t2">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem odit dolore
+      repellat omnis nam nobis commodi laudantium veniam saepe minus.
+    </p>
+    <p class="t3">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem odit dolore
+      repellat omnis nam nobis commodi laudantium veniam saepe minus.
+    </p>
+    <p class="t4">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem odit dolore
+      repellat omnis nam nobis commodi laudantium veniam saepe minus.
+    </p>
+    <p>This is an example of writing mode in <span>Vertical rl</span> as shown here</p>
+    <p class="t5">This is complete vertical mode</p>
+  </body>
+</html>
